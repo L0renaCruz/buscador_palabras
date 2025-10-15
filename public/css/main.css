@@ -1,8 +1,12 @@
 body {
-    background-image: url('../img/shinobu.jpg');
+    background-image: url('../img/fondo03.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilo para el título "Lista Animes" */
@@ -28,13 +32,14 @@ body {
 
 /* Adorno card */
 .card {
-    background: linear-gradient(135deg, #2d3a9b5a, #7e48b3);
-    /* Gradiente azul a morado */
-    border-radius: 15px;
-    position: relative;
-    padding: 2rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    /* Sombra para dar profundidad */
+  background: linear-gradient(135deg, #4e0d0d7b, #0000007d);
+  color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  max-width: 340px;
+  width: 90%;
 }
 
 #contenido_infija {
@@ -125,7 +130,7 @@ body {
 
 .table td {
     font-size: 1.1rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.252);
     /* Color blanco para las celdas */
 }
 
@@ -143,7 +148,7 @@ body {
 
 /* Ajustar la fuente en el contenido de la tarjeta */
 .content {
-    color: white;
+    color: rgb(255, 255, 255);
     /* Color blanco para el texto en la tarjeta */
     font-size: 1.2rem;
 }
