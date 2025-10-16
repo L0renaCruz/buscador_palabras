@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de palabras</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Palabras</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Buscador de palabras</h1>
-        
-        <div class="input-group">
-            <label for="textInput">Ingresa el texto:</label>
-            <textarea id="textInput" placeholder="Un párrafo, también llamado paragrafo o acápite, es una unidad comunicativa del lenguaje escrito compuesta por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo termina en un punto y aparte."></textarea>
-        </div>
+  <div class="container">
+    <h1>Buscador de palabras</h1>
+    <textarea id="texto" placeholder="Escribe o pega tu texto aquí..."></textarea>
+    <input type="text" id="busqueda" placeholder="Palabras a buscar (usa comas)">
+    <button id="btnBuscar">Buscar</button>
+    <p id="resultado"></p>
+    <div id="textoResaltado"></div>
+  </div>
 
-        <div class="search-container">
-            <label for="wordInput">Palabra a buscar:</label>
-            <div class="input-button-group">
-                <input type="text" id="wordInput" placeholder="Escribe la palabra...">
-                <button id="searchButton">Buscar</button>
-            </div>
-        </div>
-
-        <div class="result-section" id="resultSection">
-            <div class="count-box">
-                <div class="count-label">Número de repeticiones:</div>
-                <div class="count-number" id="countNumber">0</div>
-                <div class="count-word">veces aparece "<span id="searchedWord"></span>"</div>
-            </div>
-            
-            <div class="result-text" id="resultText"></div>
-            <div class="text-display" id="textDisplay"></div>
-        </div>
-    </div>
-
-    <script type="module" src="./index.js"></script>
+  <script src="bundle.js"></script>
 </body>
 </html>
