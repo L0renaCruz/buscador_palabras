@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de palabras</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Buscador de palabras</h1>
         
-        <textarea id="textInput" placeholder="Un párrafo, también llamado paragrafo o acápite, es una unidad comunicativa del lenguaje escrito compuesta por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo termina en un punto y aparte."></textarea>
+        <div class="input-group">
+            <label for="textInput">Ingresa el texto:</label>
+            <textarea id="textInput" placeholder="Un párrafo, también llamado paragrafo o acápite, es una unidad comunicativa del lenguaje escrito compuesta por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo termina en un punto y aparte."></textarea>
+        </div>
 
         <div class="search-container">
-            <input type="text" id="wordInput" placeholder="">
-            <button id="searchButton">Buscar</button>
+            <label for="wordInput">Palabra a buscar:</label>
+            <div class="input-button-group">
+                <input type="text" id="wordInput" placeholder="Escribe la palabra...">
+                <button id="searchButton">Buscar</button>
+            </div>
         </div>
 
         <div class="result-section" id="resultSection">
@@ -29,6 +35,6 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="index.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
